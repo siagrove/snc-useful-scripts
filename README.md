@@ -1,2 +1,2 @@
 # snc-useful-scripts
-# Collection of ServiceNow scripts
+Collection of ServiceNow scripts
