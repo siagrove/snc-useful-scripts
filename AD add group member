@@ -1,0 +1,6 @@
+var probe = SncProbe.get("Windows - Powershell");
+probe.setName("Windows - Powershell");
+probe.setSource("[DOMAIN CONTROLLER]"); 
+probe.addParameter("script.ps1","Add-ADGroupMember -Identity [group] -Members [user] -Confirm:$false"); //PS
+probe.addParameter("skip_sensor", true);
+probe.create("[MID SERVER NAME]");
