@@ -1,0 +1,15 @@
+Use case:
+A condition on a UI action but the condition field exceeds its character limit
+
+
+
+UIAction : function(gr) {
+  var record = (current.getRecordClassName() == 'incident' || current.getRecordClassName() == 'problem' || current.getRecordClassName() == 'change_request');
+  var role = gs.hasRole('itil');
+
+  if(record && role) //will show UI action on INC, PRB, CHG when user has itil role
+    return true;
+
+    return false;
+},
+
