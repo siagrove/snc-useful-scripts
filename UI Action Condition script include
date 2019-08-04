@@ -1,9 +1,10 @@
+/*
 Use case:
 A condition on a UI action but the condition field exceeds its character limit
+*/
 
 
-
-UIAction : function(gr) {
+condition : function() {
   var record = (current.getRecordClassName() == 'incident' || current.getRecordClassName() == 'problem' || current.getRecordClassName() == 'change_request');
   var role = gs.hasRole('itil');
 
